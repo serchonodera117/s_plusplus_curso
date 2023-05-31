@@ -43,7 +43,53 @@ void bidementionalArray(){
         }
 }
 
+void trhidimentionalArray(){
+      //example of an excersice
+      //  hour/day/month, each index is a part of the date using the prevous examole.  
+    int passCars[24][31][12]; 
+
+    //may 15th at 2 am
+    passCars[2][14][4] = 4;
+
+    // cout <<"The number of car that passed on may 15th at 2 AM is: "<< passCars[2][14][4];
+
+    //setting the array positions with random numbers
+    for(int i = 0; i <24; i++)
+    {
+        for(int j = 0; j<31; j++)
+        {
+            for(int h = 0; h<12; h++)
+            {
+                passCars[i][j][h] = rand()%1000;
+            }
+        }
+    } 
+    for(int i = 0; i <24; i++)
+    {
+        string hour = (i > 12)? "AM": "PM";
+        cout <<"Hour "<< i << " "<<hour; 
+        for(int j = 0; j<31; j++)
+        {
+            cout <<"Day :"<< j<< endl; 
+            for(int h = 0; h<12; h++)
+            {
+
+                cout <<"Total cars that crossed on"<< j<<"/"<<h <<
+                " at " << i << " " << hour <<" : "<< passCars[i][j][h] << endl; 
+            }
+        }
+        cout << "\n \n \n"<<endl;
+    }    
+}
 int main(){
-    bidementionalArray();
+        //be reallu careful about those thype of arrays, becasuse their computional complex
+        //consumes a very high level of computational resources. 
+        //the number of iterations just grows for each cicle, 
+        //giving a cuadratic or cubic algorithm or even more complex as a result
+        //i don't recoment to use these type os techniques on big projects
+
+
+    // bidementionalArray();  
+    // trhidimentionalArray();
     return 0;
 }
