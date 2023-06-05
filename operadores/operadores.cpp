@@ -24,8 +24,22 @@ void primos(){
     }
     
 }
+void operatorsChangeType(){ //the language will change the data type if one of the data on a single operation is changed
+                           //created by many data types, so they will change to the most precise data type.
+    //auto, automatically identify the data type of yout variable
+    auto n = 3;
+    int a = 3;
+    float b = 4.0f;     
+    double c = 8.0;
 
+    auto result = (a+b+c+n)/4;
+
+    cout << "Data Type: [" << typeid(result).name() << "] resutlt: "<< result << endl; //data tyme of the operation is float because it's decimals after dot, so is more precise than int
+
+
+}
 int main(int argc, char**){
-    primos();
+    operatorsChangeType();
+    // primos();
     return 0;
 }
