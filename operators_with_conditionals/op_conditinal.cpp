@@ -20,7 +20,7 @@ void conditionals(){
     }
 }
 
-void logicOperators(){
+void logicOperatorAND(){
      int age;
      string medic_exam;
 
@@ -40,8 +40,26 @@ void logicOperators(){
 
 }
 
+void logicOperatorOR(){
+    /*this example is created as an example to provide economic support to students if their calification
+    is greater than 8 or if their distance of center is greater than 20 */
+    int calification, centerDistance;
+
+    cout << "introduce the calification"<<endl;
+    cin >> calification;
+
+    cout << "Introduce the distance of place were you live to the city center: " << endl;
+    cin >> centerDistance;
+
+    if(calification >8 || centerDistance > 20){
+        cout << "you deserve the support for your profetional education";
+    } else{
+        cout << "we have seen your request, unfortunately, we decided to review other student, your profile doesn't match with the requeiments to this economic support";
+    }
+}
 int main(){
-    logicOperators();
+    logicOperatorOR();
+    // logicOperatorAND();
     // conditionals();
     return 0;
 }
