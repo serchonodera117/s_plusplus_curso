@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 
+//the use of the classes has the same logic as other subjects
+//the execution sequense is like a waterfall, starts on the top 
+//and ends on the bottom, so declare a class is to create any type of variable created by your self 
+//with your own behaviour, and then  the syntaxis is relatively strange.
+//"class NameClass{} pubic: to set public variables and methods and private to the private variables and methods"
 
 class User{
-    private:
-        string name;
-        int age;
-
     public:
     void setName(string name){
         this->name = name;
@@ -14,6 +15,12 @@ class User{
     void consoleLog(){
         cout << "the name is " << name;
     }
+
+    
+    private:
+        string name;
+        int age;
+
 };
 
 
