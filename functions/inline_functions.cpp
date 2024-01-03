@@ -23,6 +23,8 @@ Disadventages:
 */
 
 int main(int argc, char **argv){
-    cout << "Sum by an inline function: "<< sum(5,10);
+    short x = 10, y = 5;
+    int result = sum(x, y);
+    cout << "Sum by an inline function: "<< result;
     return 0;
 }
