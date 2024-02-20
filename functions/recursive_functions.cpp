@@ -27,6 +27,14 @@ int factorialRecursionFactorial(int n){
 
 }
 
+int fibonacci(int n){
+    if(n < 2){
+        return n;
+    }else{
+        return fibonacci(n-1) + fibonacci(n-2);
+    }
+}
+
 void printFactorial(){
     int number;
     cout << "Introduce a number to calculate factorial: ";
@@ -43,9 +51,17 @@ void printRecursionFactorial(){
     cout<< "[" << number <<"] factorial is: "<< factorialRecursionFactorial(number) << endl;
 }
 
+
+void printFibonacci(){
+    int number;
+    cout << "Introduce a number to calculate fibonacci: ";
+    cin >> number;
+
+    cout<< "[" << number <<"] fibonacci is: "<< fibonacci(number) << endl;
+}
 int main(int argc, char** argv){
    //printFactorial();
-   printRecursionFactorial();
-
+   //printRecursionFactorial();
+   printFibonacci();
     return 0;
 }
