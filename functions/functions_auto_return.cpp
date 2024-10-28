@@ -31,8 +31,6 @@ int main(){
         {"naranja",4},
     };
     auto it = searchMap(myMap, "platano");
-    auto it2 = searchMap(myMap, "platano");
-    auto it3 = searchMap(myMap, "platano");
 
     //verify if map was found and show it's value
     if(it != myMap.end()){
