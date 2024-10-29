@@ -29,6 +29,7 @@ int main(){
         {"manzana",1},
         {"platano",2},
         {"naranja",4},
+        {"naranjaz",4},
     };
     auto it = searchMap(myMap, "platano");
 
